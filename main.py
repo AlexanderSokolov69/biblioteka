@@ -667,7 +667,7 @@ class Spisok_knig(QtWidgets.QWidget, Ui_CatListWindow):
                     cursor = conn.cursor()
                     cursor.execute("DELETE FROM Книги WHERE Код_книги = ?", (kniga,))
                     conn.commit()
-            self.tableWidget.removeRow(selected_row)
+                    self.tableWidget.removeRow(selected_row)
 
 
 class red_knigi(QtWidgets.QWidget, Ui_BookWindow):
